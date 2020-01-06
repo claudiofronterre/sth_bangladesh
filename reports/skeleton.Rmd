@@ -1,0 +1,52 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    keep_tex: true
+    fig_caption: true
+    latex_engine: pdflatex
+    template: template.tex
+    number_sections: false
+title: "Title"
+thanks: "**Corresponding author**: c.fronterr@lancaster.ac.uk."
+author:
+  name: Claudio Fronterre, Luigi Sedda
+  affiliation: CHICAS, Lancaster University
+abstract: "This is my abstract"
+keywords: "keyword1, keyword2, Keyword3"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontfamily: mathpazo
+fontsize: 11pt
+header-includes:
+- \usepackage[english]{babel}
+- \usepackage{booktabs}
+- \usepackage{longtable}
+- \usepackage{array}
+- \usepackage{multirow}
+- \usepackage[table]{xcolor}
+- \usepackage{wrapfig}
+- \usepackage{float}
+- \usepackage{colortbl}
+- \usepackage{pdflscape}
+- \usepackage{tabu}
+- \usepackage{threeparttable}
+- \usepackage{threeparttablex}
+- \usepackage[normalem]{ulem}
+- \usepackage{makecell}
+#spacing: double
+bibliography: biblio.bib
+biblio-style: apalike
+endnote: no
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, cache = F, warning = F, message = F)
+```
+
+# Section
+
+
+## Subsection
